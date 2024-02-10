@@ -1,4 +1,4 @@
-import { handleError } from '../backend/utils/handleError'
+import { handleError } from '../utils/handleError.js'
 
 // * addSingleTodo, getSingleTodo, getAllTodos, updateSingleTodo, deleteSingleBook
 
