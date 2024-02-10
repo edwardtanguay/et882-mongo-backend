@@ -1,8 +1,15 @@
 import express from 'express'
 import mongoose from 'mongoose'
+import cors from 'cors'
+import dotenv from 'dotenv'
+dotenv.config()
 import { todosRouter } from './backend/routers/todosRouter.js'
+
 const port = 3075
 const app = express()
+
+app.use(express.json())
+app.use(cors())
 
 app.use('/todos', todosRouter)
 
