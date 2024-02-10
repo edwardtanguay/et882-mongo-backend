@@ -14,7 +14,7 @@ app.use(cors())
 app.use('/todos', todosRouter)
 
 const dbUrl =
-    'mongodb+srv://Selman:Whqyo6GtZefllLTG@cluster0.nalr6l0.mongodb.net/?retryWrites=true&w=majority'
+    'mongodb+srv://Selman:Whqyo6GtZefllLTG@cluster0.nalr6l0.mongodb.net/todo-app?retryWrites=true&w=majority'
 
 const connectToDb = async () => {
     try {
