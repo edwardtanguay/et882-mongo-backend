@@ -1,0 +1,30 @@
+@url = http://localhost:3075
+
+### GET ALL TODOS
+GET {{url}}/todos
+	
+### DELETE ALL TODOS
+DELETE {{url}}/todos
+	
+### ADD A TODO
+POST {{url}}/todos
+content-type: application/json
+	
+{
+	"todo": "go to movie"
+}
+
+### GET SINGLE TODO
+GET {{url}}/todos/65c883a93c5544a727e16977
+	
+### EDIT SINGLE TODO
+PATCH {{url}}/todos/65c883a93c5544a727e16977
+content-type: application/json
+	
+{
+	"todo": "go to doctor"
+}
+	
+### DELETE SINGLE TODO
+DELETE {{url}}/todos/65c883a93c5544a727e16977
+	
